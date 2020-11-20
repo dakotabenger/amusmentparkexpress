@@ -60,8 +60,9 @@ const runSpecs = () => {
 
       it('should render an "Amusement Park Tracker" hyperlink (`<a>` element) with an `href` attribute set to "/" in the top navbar', () => {
         const homeHyperlink = $('nav a[href="/"]');
-        expect(homeHyperlink.length).to.equal(1);
-        expect(homeHyperlink.text()).to.equal('Amusement Park Tracker');
+        console.log('first', expect(homeHyperlink.length).to.equal(1));
+        console.log('second', expect(homeHyperlink.text()).to.equal('Amusement Park Tracker'));
+
       });
 
       it('should render a "Parks" hyperlink (`<a>` element) with an `href` attribute set to "/parks" in the top navbar', () => {

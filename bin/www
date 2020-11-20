@@ -1,0 +1,8 @@
+#!/user/bin/env node
+
+const app = require('../app.js');
+let port = 8080;
+
+app.listen(port, () => {
+    console.log(`Listening at ${port}...`)
+})
